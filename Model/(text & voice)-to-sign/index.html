@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من الصوت إلى لغة الإشارة العربية</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+
+    <header class="app-header">
+      <h1>من الصوت إلى لغة الإشارة</h1>
+      <p>تجربة مستقلة: التقاط الصوت ← نص ← ترتيب الإشارة ← عرض الإشارات</p>
+    </header>
+
+    <div id="errorBox" class="error-box" role="alert" hidden></div>
+
+    <section class="card">
+      <h2>1) التسجيل الصوتي</h2>
+      <div class="row">
+        <button id="micBtn" class="btn mic-btn" type="button">🎤 ابدأ التسجيل</button>
+        <span id="status" class="status">جاهز</span>
+      </div>
+      <p class="hint">اضغط الزر، اسمح للمتصفح بالميكروفون، وتكلم بالعربية بجملة قصيرة.</p>
+    </section>
+
+    <section class="card">
+      <h2>أو اكتب جملة للتجربة بدون ميكروفون</h2>
+      <textarea id="textInput" rows="2" placeholder="أكتب شيء"></textarea>
+      <div class="row">
+        <button id="sendBtn" class="btn" type="button">حوّل إلى إشارة</button>
+        <label class="check">
+          <input type="checkbox" id="useLlm" checked>
+          استخدم Gemini لتبسيط الجملة
+        </label>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2) النص المسموع</h2>
+      <div id="transcript" class="box">لسه مفيش كلام...</div>
+    </section>
+
+    <section class="card">
+      <h2>3) ترتيب لغة الإشارة (Gloss)</h2>
+      <div id="glossOutput" class="box">لسه مفيش نتيجة...</div>
+    </section>
+
+    <section class="card">
+      <h2>4) عرض الإشارات</h2>
+
+      <div class="player">
+        <video id="signVideo" muted playsinline></video>
+        <div id="placeholder" class="placeholder">الإشارة هتظهر هنا</div>
+      </div>
+
+      <div id="currentWord" class="current-word">&nbsp;</div>
+
+      <div id="sequence" class="sequence"></div>
+
+      <div id="missingWords" class="missing" hidden></div>
+
+      <div class="row controls">
+        <button id="replayBtn" class="btn secondary" type="button">إعادة</button>
+        <button id="clearBtn" class="btn secondary" type="button">مسح</button>
+        <label class="check">
+          السرعة
+          <select id="speedSelect">
+            <option value="1">عادي (1x)</option>
+            <option value="2">أسرع قليلاً (2x)</option>
+            <option value="3" selected>أسرع أكثر (3x)</option>
+            <option value="4">أسرع شيء (4x)</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      قاموس تجريبي — مصدر الإشارات: menasy.com
+    </footer>
+
+  </main>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

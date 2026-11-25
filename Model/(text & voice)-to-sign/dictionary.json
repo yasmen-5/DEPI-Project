@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "description": "قاموس تجريبي للغة الإشارة العربية - 7 إشارات",
+  "signs": [
+    {
+      "id": "welcome",
+      "word": "أهلا وسهلا",
+      "aliases": ["أهلا", "اهلا", "مرحبا", "اهلا وسهلا", "أهلاً وسهلاً"],
+      "file": "signs/welcome.mp4",
+      "source": "https://menasy.com/signs/welcome-26007/"
+    },
+    {
+      "id": "mother",
+      "word": "أم",
+      "aliases": ["ام", "والدة", "ماما", "أمي", "امي"],
+      "file": "signs/mother.mp4",
+      "source": "https://menasy.com/signs/mother-01005/"
+    },
+    {
+      "id": "father",
+      "word": "أب",
+      "aliases": ["اب", "والد", "بابا", "أبي", "ابي"],
+      "file": "signs/father.mp4",
+      "source": "https://menasy.com/signs/father-01004/"
+    },
+    {
+      "id": "friend",
+      "word": "صديق",
+      "aliases": ["صاحب", "صديقي"],
+      "file": "signs/friend.mp4",
+      "source": "https://menasy.com/signs/friend-26001/"
+    },
+    {
+      "id": "eat",
+      "word": "يأكل",
+      "aliases": ["أكل", "اكل", "ياكل", "آكل", "اكلت", "أكلت"],
+      "file": "signs/eat.mp4",
+      "source": "https://menasy.com/signs/eat-22001/"
+    },
+    {
+      "id": "help",
+      "word": "يساعد",
+      "aliases": ["مساعدة", "ساعد", "يساعدني", "ساعدني", "مساعده"],
+      "file": "signs/help.mp4",
+      "source": "https://menasy.com/signs/help-22023/"
+    },
+    {
+      "id": "love",
+      "word": "يحب",
+      "aliases": ["حب", "أحب", "احب", "بحب"],
+      "file": "signs/love.mp4",
+      "source": "https://menasy.com/signs/love-22015/"
+    }
+  ]
+}
