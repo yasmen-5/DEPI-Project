@@ -1,0 +1,3 @@
+AQ.Ab8RN6KZuDF8rSjpj48oecIQspqePCCN0kgjiBJbzbNYbMaP8Q
+
+open file (config.js) and put this key in its place
